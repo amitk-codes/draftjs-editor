@@ -1,3 +1,25 @@
 .save-button-div{
   margin-left: auto;
 }
+
+.save-button{
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500; 
+  font-size: 16px; 
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.save-button:active{
+  box-shadow: 0 0 2px black;
+  /* border: 2px solid black; */
+}

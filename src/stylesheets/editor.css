@@ -1,0 +1,7 @@
+.editor-div{
+  height: 70svh;
+  overflow: auto;
+  border: 2px solid #98bef2;
+  padding: 20px 10px;
+}
+
