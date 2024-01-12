@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Editor, EditorState, Modifier, RichUtils } from 'draft-js';
+import { Editor} from 'draft-js';
 import 'draft-js/dist/Draft.css';
 import "../stylesheets/editor.css"
 import { customMappedStyle, functionalityObj } from '../utils/constants';
 import { functionalityHandler } from '../utils/handlerFunctions';
-export const TextEditor = () => {
-  const [editorState, setEditorState] = useState(EditorState.createEmpty());
+export const TextEditor = ({editorState, setEditorState}) => {
   const onChangeHandler = (newEditorState) => setEditorState(newEditorState)
 
   const handleBeforeInput = (char, editorState) => {
